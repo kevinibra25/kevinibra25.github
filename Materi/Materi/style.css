@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+}
+.materi-integral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 9999;
+    border-bottom: 1px solid;
+    padding: 1.4rem 7%;
+    background-image: -moz-linear-gradient(to right,rgb(0, 204, 255), white);
+}
+.materi-logo span{
+    color: blue;
+}
+.materi-integral .materi-logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+.materi-integral .navbar-materi a{
+    color: black;
+    font-size: 20px;
+    display: inline block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.materi-integral .navbar-materi a:hover{
+    color: red;
+}
+/* Isi Materi */
+.isi-materi{
+    padding: 7rem;
+
+}
+.isi-materi h1{
+    text-align: center;
+}
+.isi-materi code{
+    color: blue;
+}
+.gambar-integral{
+    float: right;
+    padding: 2rem;
+}
+.gif{
+   float: right;
+   padding: 20px;
+   
+}
+/* materi 2 */
+
+.materi-2{
+    margin-top: 50px;
+
+}
+.gif-2{
+    float: right;
+    padding: 20px;
+}
+
+
+/* Materi End */
+
+/* Kalkulator Start */
+
+.kalkulator-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kalkulator-biasa{
+    background-color: rgb(0, 157, 255);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.16), 5px 5px 12px rgba(0, 0, 0, 0.16);
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset -5px -5px 12px aliceblue , inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 20px;
+    color: rgb(70, 70, 70);
+    font-size: 40px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+button{
+    height: 48px;
+    width: 48px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 5px 5px 12px, white, 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+}
+.sama-dengan{
+    width: 115px;
+    border-radius: 40px;
+    background-color: rgb(247, 240, 240);
+    box-shadow: inset 5px 5px 12px, white, 5px 5px 12px rgba(0, 0, 0, 0.16);
+}

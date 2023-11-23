@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Kalkulus/Materi Integral</title>
+    <link rel="stylesheet" href="Materi\style.css">
+    <!-- Font -->
+    <script src="https://kit.fontawesome.com/817f72ffce.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+</head>
+<body>
+    <!-- Navbar Materi -->
+    <nav class="materi-integral">
+        <a href="#" class="materi-logo">Inte<span>gral.</span></a>
+
+        <div class="navbar-materi">
+            <a href="#materi" class="materi"><i class="fa-solid fa-book"></i> Materi</a>
+            <a href="#kalkulator" class="kalkulator"><i class="fa-solid fa-calculator"></i> Kalkulator</a>
+        </div>
+
+    </nav>
+    <!-- Navbar Materi -->
+
+    <!-- Materi Isi -->
+    <section class="isi-materi" id="materi">
+        <main class="awalan-materi">
+          <img class="gif" src="Mathematics.gif" alt="gif" width="400px">
+            <h1>Materi Integral Tak Tentu</h1><br>
+            <h2>Pengertian Integral Tak Tentu</h2>
+            <p>Integral tak tentu adalah suatu konsep dalam matematika yang berkaitan dengan mencari <br> fungsi primitif
+               atau fungsi Anti Turunan dari suatu fungsi.</p><br>
+               <h2>Rumus Integral Tak Tentu</h2>
+               <p>Rumus integral tak tentu umumnya dituliskan sebagai:</p>
+        <code>∫ f(x) dx = F(x) + C</code>
+        <p>di mana <code>F(x)</code> adalah fungsi primitif dari <code>f(x)</code>, dan <code>C</code> adalah konstanta integrasi.</p><br>
+    
+        <div class="contoh-soal">
+        <h3>Contoh Soal</h3><br>
+        <p>∫6x^2 dx <br>
+            Pembahasan jawaban: <br>
+             ∫6x^2 dx <br>
+            = 6 ∫x^2 dx <br>
+            = 6 x x^3/3 + C <br>
+            = 2x^3 + C <br>
+            Jadi, integral dari 6x^2 dx adalah 2x^3 + C</p>
+        </div>
+        </main>
+        <main class="materi-2">
+            <img class="gif-2" src="Mathematics 2.gif" alt="gif-2" width="400px">
+            <div class="integral-tentu"></div>
+            <h1>Materi Integral Tentu</h1><br>
+            <h2>Pengertian Integral Tentu</h2>
+            <p>bentuk integral yang variabel integrasinya memiliki batasan (batas atas dan batas bawah) yang ditulis di bagian atas dan 
+                bawah notasi integral.</p><br>
+               <h2>Rumus Integral Tentu</h2>
+               <p>Rumus integral tentu umumnya dituliskan sebagai:</p>
+        <code>a∫b f(x)dx = f (b) - f (a)</code><br>
+        <p>di mana <code>f(x)</code> = fungsi yang nantinya akan Anda Integralkan <br>
+
+            <code>F(a)</code> = nilai integral pada batas bawah. <br>
+            
+            <code>F(b)</code> = nilai integral pada batas atas.<br>
+            
+            <code>d(x) </code>= variabel integral.<br>
+            
+           <code>a </code> = batas bawah pada variabel integral.</code> adalah konstanta integrasi.</p><br>
+    
+        <div class="contoh-soal">
+        <h3>Contoh Soal</h3><br>
+        <p>∫13​(2x+1)dx <br>
+            Pembahasan jawaban: <br>
+            ∫13​(2x+1)dx=[x2+x]13​<br>
+            =[(32+3)−(12+1)]=[(32+3)−(12+1)]<br>
+            =[9+3−1−1]=[9+3−1−1]<br>
+            =10=10<br>
+            
+            Jadi, ∫13(2x+1) dx=10∫13​(2x+1)dx=10.</p>
+        </div>
+        </main>
+    </section>
+    <!-- Materi End -->
+      
+    <!-- Kalkulator -->
+    <section class="kalkulator-biasa" id="kalkulator">
+    <div class="kalkulator-container"> 
+        <div class="kalkulator-biasa">
+            <input type="text" placeholder="0" id="output-kalkulator">
+            <button onclick="Clear()">C1</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="Calculate('')" class="sama-dengan">=</button>
+        </div>
+    </div>
+          <script>
+            let outputKalkulator = document.getElementById("output-kalkulator");
+            function display(num){
+                outputKalkulator.value += num;
+            }
+            function Calculate(){
+            try{
+                outputKalkulator.value = eval(outputKalkulator.value);
+            }
+            catch(err)
+            {
+               alert("invalid")
+            }
+        }
+            function Clear(){
+                outputKalkulator.value = "";
+            }
+          </script>  
+        
+    </section>
+</body>
+</html>
